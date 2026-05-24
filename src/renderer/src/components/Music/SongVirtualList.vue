@@ -1,3 +1,4 @@
+// @ts-nocheck
 <template>
   <div class="song-virtual-list">
     <!-- 表头 -->

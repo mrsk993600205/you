@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, onBeforeUnmount, ref, computed } from 'vue'
+import { onMounted, onBeforeUnmount, computed } from 'vue'
 import { useRoute } from 'vue-router'
 // import { MessagePlugin } from 'tdesign-vue-next'
 import { useSettingsStore } from '@renderer/store/Settings'
@@ -29,16 +29,6 @@ import { useSettingsStore } from '@renderer/store/Settings'
 const route = useRoute()
 // const router = useRouter()
 const settingsStore = useSettingsStore()
-// 启动页路由是 '/'(welcome)；其它路由（/home/*, /settings 等）视为应用就绪
-// 排除桌面歌词与识别 worker 这种独立窗口
-const isAppReady = computed(() => {
-  const p = route.path || ''
-  if (p === '/' || p === '') return false
-  if (p.startsWith('/desktop-lyric')) return false
-  // if (p.startsWith('/recognition-worker')) return false
-  return true
-})
-
 // disabled: cloud/sharing - DeepLinkQueue removed
 
 // disabled: cloud/sharing - songShareQueue and playlistShareQueue removed

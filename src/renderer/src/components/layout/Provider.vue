@@ -98,10 +98,7 @@ const markGuideDone = () => { ... }
 watch(guideCurrent, (val) => { ... })
 */
 
-const isWelcomeRoute = computed(() => {
-  const r = router.currentRoute.value
-  return r?.name === 'welcome' || r?.path === '/'
-})
+const isWelcomeRoute = computed(() => false) // always false, LT removed
 
 // 赞助弹窗已移除
 /*
