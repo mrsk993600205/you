@@ -16,3 +16,5 @@ temp/log.txt
 /.idea/
 docs/.vitepress/dist
 docs/.vitepress/cache
+.claude/settings.json
+.claude/settings.local.json
