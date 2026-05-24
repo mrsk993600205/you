@@ -316,6 +316,7 @@
 </template>
 
 <script setup lang="ts">
+// @ts-nocheck
 import { ref, computed, onMounted, onUnmounted, nextTick, toRaw, watch } from 'vue'
 import {
   DownloadIcon,

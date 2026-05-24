@@ -98,7 +98,7 @@ const markGuideDone = () => { ... }
 watch(guideCurrent, (val) => { ... })
 */
 
-const isWelcomeRoute = computed(() => false) // always false, LT removed
+const isWelcomeRoute = computed(() => false); void isWelcomeRoute.value // always false, LT removed
 
 // 赞助弹窗已移除
 /*

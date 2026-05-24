@@ -19,14 +19,13 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, onBeforeUnmount, computed } from 'vue'
-import { useRoute } from 'vue-router'
+import { onMounted, onBeforeUnmount } from 'vue'
+// import { useRoute } from 'vue-router'
 // import { MessagePlugin } from 'tdesign-vue-next'
 import { useSettingsStore } from '@renderer/store/Settings'
 // disabled: cloud/sharing
 // import shareAPI from '@renderer/api/share'
 
-const route = useRoute()
 // const router = useRouter()
 const settingsStore = useSettingsStore()
 // disabled: cloud/sharing - DeepLinkQueue removed
