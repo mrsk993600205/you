@@ -28,7 +28,7 @@ import LyricAdapter from './Lyric/LyricAdapter.vue'
 // import CommentsOverlay from './CommentsOverlay.vue' // disabled
 import LyricCopyOverlay from './LyricCopyOverlay.vue'
 // disabled
-// import ListenTogetherOverlay from './ListenTogetherOverlay.vue'
+// // import ListenTogetherOverlay from './ListenTogetherOverlay.vue'
 // import LtDanmakuLayer from '@renderer/components/ListenTogether/LtDanmakuLayer.vue'
 import { useLyricExtrasStore } from '@renderer/store/LyricExtras'
 
@@ -1040,12 +1040,12 @@ onUnmounted(() => {
       @close="lyricExtrasStore.closeCopy()"
     />
     <!-- disabled: 一起听
-    <ListenTogetherOverlay
+    <!-- <ListenTogetherOverlay
       :show="props.showListenTogether"
       :main-color="lightMainColor"
       @close="emit('update:showListenTogether', false)"
     />
-    <LtDanmakuLayer />
+    <!-- <LtDanmakuLayer />
     -->
   </div>
 </template>

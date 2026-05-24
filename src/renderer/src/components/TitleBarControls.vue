@@ -159,7 +159,7 @@ onBeforeUnmount(() => {
       <slot name="extra" />
       <!-- disabled: login
       <div v-if="showAccount" class="account-module">
-        <UserCapsule :color="color" />
+        <!-- <UserCapsule :color="color" />
       </div>
       -->
 

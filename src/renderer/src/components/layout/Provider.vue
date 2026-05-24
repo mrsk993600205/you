@@ -244,7 +244,7 @@ const confirmImportPrompt = async () => {
     if (dontAskAgain.value) {
       settingsStore.updateSettings({
         autoCacheMusic: settings.autoCacheMusic,
-        showFloatBall: settings.showFloatBall,
+        // showFloatBall: settings.showFloatBall,
         tagWriteOptions: settings.tagWriteOptions,
         // 新增偏好
         autoImportPlaylistOnOpen: true,
@@ -704,7 +704,7 @@ onUnmounted(() => {
           </t-dialog>
           <GlobalAudio />
           <!-- <FloatBall /> -->
-          <PluginNoticeDialog />
+          <!-- <PluginNoticeDialog /> disabled -->
           <!-- <UpdateProgress /> 自动更新已移除 -->
           <!-- <t-guide v-model="guideCurrent" :steps="guideSteps" @change="onGuideChange" /> 开局引导已移除 -->
         </div>

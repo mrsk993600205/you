@@ -1698,7 +1698,7 @@ watch(showFullPlay, (val) => {
   <!-- <ShareSongDialog v-model="shareDialogVisible" /> -->
 
   <!-- disabled: LT
-  <ListenTogetherEntryDialog v-model="listenTogetherEntryVisible" :mode="listenTogetherEntryMode" />
+  <!-- <ListenTogetherEntryDialog v-model="listenTogetherEntryVisible" :mode="listenTogetherEntryMode" />
   -->
 </template>
 
