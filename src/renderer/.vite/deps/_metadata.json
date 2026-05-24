@@ -1,0 +1,115 @@
+{
+  "hash": "16f05322",
+  "configHash": "4c10f0c8",
+  "lockfileHash": "61cf123f",
+  "browserHash": "d54ec870",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "70704576",
+      "needsInterop": false
+    },
+    "naive-ui": {
+      "src": "../../../../node_modules/naive-ui/es/index.mjs",
+      "file": "naive-ui.js",
+      "fileHash": "3dee09b8",
+      "needsInterop": false
+    },
+    "pinia": {
+      "src": "../../../../node_modules/pinia/dist/pinia.mjs",
+      "file": "pinia.js",
+      "fileHash": "e9561f71",
+      "needsInterop": false
+    },
+    "pinia-plugin-persistedstate": {
+      "src": "../../../../node_modules/pinia-plugin-persistedstate/dist/index.js",
+      "file": "pinia-plugin-persistedstate.js",
+      "fileHash": "5e23238e",
+      "needsInterop": false
+    },
+    "vue-router": {
+      "src": "../../../../node_modules/vue-router/dist/vue-router.mjs",
+      "file": "vue-router.js",
+      "fileHash": "f2815ee4",
+      "needsInterop": false
+    },
+    "tdesign-icons-vue-next": {
+      "src": "../../../../node_modules/tdesign-icons-vue-next/esm/index.js",
+      "file": "tdesign-icons-vue-next.js",
+      "fileHash": "3295d836",
+      "needsInterop": false
+    },
+    "tdesign-vue-next": {
+      "src": "../../../../node_modules/tdesign-vue-next/es/index.mjs",
+      "file": "tdesign-vue-next.js",
+      "fileHash": "6b6e5017",
+      "needsInterop": false
+    },
+    "crypto-js": {
+      "src": "../../../../node_modules/crypto-js/index.js",
+      "file": "crypto-js.js",
+      "fileHash": "ae7092cf",
+      "needsInterop": true
+    },
+    "@applemusic-like-lyrics/lyric": {
+      "src": "../../../../node_modules/@applemusic-like-lyrics/lyric/dist/amll-lyric.mjs",
+      "file": "@applemusic-like-lyrics_lyric.js",
+      "fileHash": "ae1a4393",
+      "needsInterop": false
+    },
+    "mitt": {
+      "src": "../../../../node_modules/mitt/dist/mitt.mjs",
+      "file": "mitt.js",
+      "fileHash": "f411ea0b",
+      "needsInterop": false
+    },
+    "three": {
+      "src": "../../../../node_modules/three/build/three.module.js",
+      "file": "three.js",
+      "fileHash": "02a3c7e1",
+      "needsInterop": false
+    },
+    "@vueuse/core": {
+      "src": "../../../../node_modules/@vueuse/core/index.mjs",
+      "file": "@vueuse_core.js",
+      "fileHash": "74c32f48",
+      "needsInterop": false
+    },
+    "lodash": {
+      "src": "../../../../node_modules/lodash/lodash.js",
+      "file": "lodash.js",
+      "fileHash": "6e52a9a3",
+      "needsInterop": true
+    },
+    "@applemusic-like-lyrics/core": {
+      "src": "../../../../node_modules/@applemusic-like-lyrics/core/dist/amll-core.mjs",
+      "file": "@applemusic-like-lyrics_core.js",
+      "fileHash": "5e114214",
+      "needsInterop": false
+    },
+    "@applemusic-like-lyrics/vue": {
+      "src": "../../../../node_modules/@applemusic-like-lyrics/vue/dist/amll-vue.mjs",
+      "file": "@applemusic-like-lyrics_vue.js",
+      "fileHash": "2c2f533d",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-NURBIJQJ": {
+      "file": "chunk-NURBIJQJ.js"
+    },
+    "chunk-2TLJOVWP": {
+      "file": "chunk-2TLJOVWP.js"
+    },
+    "chunk-5PZCRQYQ": {
+      "file": "chunk-5PZCRQYQ.js"
+    },
+    "chunk-7XPGAGRY": {
+      "file": "chunk-7XPGAGRY.js"
+    },
+    "chunk-PR4QN5HX": {
+      "file": "chunk-PR4QN5HX.js"
+    }
+  }
+}
