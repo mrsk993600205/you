@@ -1181,18 +1181,22 @@ onBeforeUnmount(() => {
     }
   }
   &.locked {
-    cursor: default;
+    cursor: move;
+    -webkit-app-region: drag;
     .song-name,
-    .menu-btn,
+    .menu-btn {
+      pointer-events: none;
+      opacity: 0;
+    }
     .lyric-container {
       pointer-events: none;
     }
-    // &.hovered {
-    //   // .lock-btn {
-    //   //   opacity: 1;
-    //   //   pointer-events: auto;
-    //   // }
-    // }
+    &.hovered {
+      .lock-btn {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
   }
 }
 </style>
