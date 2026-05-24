@@ -938,6 +938,7 @@ onBeforeUnmount(() => {
       align-items: center;
       gap: 8px;
       justify-content: center;
+      -webkit-app-region: no-drag;
     }
     .header-left {
       justify-content: flex-start;
@@ -1184,18 +1185,15 @@ onBeforeUnmount(() => {
     cursor: move;
     -webkit-app-region: drag;
     .song-name,
-    .menu-btn {
+    .menu-btn:not(.lock-btn) {
       pointer-events: none;
       opacity: 0;
     }
     .lyric-container {
       pointer-events: none;
     }
-    &.hovered {
-      .lock-btn {
-        opacity: 1;
-        pointer-events: auto;
-      }
+    .lock-btn {
+      pointer-events: auto;
     }
   }
 }

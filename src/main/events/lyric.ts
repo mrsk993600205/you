@@ -227,12 +227,7 @@ const initLyricIpc = (mainWin?: BrowserWindow | null): void => {
     if (!lyricWin) return
     lyricLockState = !!isLock
     lyricStore.set({ isLock: lyricLockState })
-    // 是否穿透
-    if (lyricLockState) {
-      lyricWin.setIgnoreMouseEvents(true, { forward: true })
-    } else {
-      lyricWin.setIgnoreMouseEvents(false)
-    }
+    // 锁定时不穿透鼠标，由 CSS 控制交互
     // 广播到桌面歌词窗口与主窗口，保持两端状态一致
     lyricWin.webContents.send('toogleDesktopLyricLock', lyricLockState)
     mainWin?.webContents.send('toogleDesktopLyricLock', lyricLockState)
@@ -256,7 +251,6 @@ const initLyricIpc = (mainWin?: BrowserWindow | null): void => {
         }
         // 恢复锁定状态
         if (lyricLockState) {
-          lyricWin.setIgnoreMouseEvents(true, { forward: true })
           lyricWin.webContents.send('toogleDesktopLyricLock', lyricLockState)
           mainWin?.webContents.send('toogleDesktopLyricLock', lyricLockState)
         }
