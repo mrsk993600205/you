@@ -19,7 +19,7 @@ jobs:
         # 定义运行环境：Windows, macOS, Linux
         # macos-15-intel = Intel x64 runner (macos-13 已于 2025-12-04 下线), macos-latest = Apple Silicon arm64 runner
         # 两台 mac runner 各自构建对应架构,避免 universal 包对 native module(better-sqlite3) 的二进制冲突
-        os: [windows-latest, macos-15-intel, macos-latest, ubuntu-latest]
+        os: [windows-latest]
 
     steps:
       - name: Check out git repository
