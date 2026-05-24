@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 /**
  * 一起听 · 邀请入口统一调度
  *

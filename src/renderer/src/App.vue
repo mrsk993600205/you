@@ -19,15 +19,15 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, onBeforeUnmount, ref, computed, watch } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
-import { MessagePlugin } from 'tdesign-vue-next'
+import { onMounted, onBeforeUnmount, ref, computed } from 'vue'
+import { useRoute } from 'vue-router'
+// import { MessagePlugin } from 'tdesign-vue-next'
 import { useSettingsStore } from '@renderer/store/Settings'
 // disabled: cloud/sharing
 // import shareAPI from '@renderer/api/share'
 
 const route = useRoute()
-const router = useRouter()
+// const router = useRouter()
 const settingsStore = useSettingsStore()
 // 启动页路由是 '/'(welcome)；其它路由（/home/*, /settings 等）视为应用就绪
 // 排除桌面歌词与识别 worker 这种独立窗口
@@ -39,44 +39,7 @@ const isAppReady = computed(() => {
   return true
 })
 
-interface DeepLinkQueueOptions {
-  label: string
-  handler: (id: string) => Promise<void>
-}
-
-function createDeepLinkQueue({ label, handler }: DeepLinkQueueOptions) {
-  const pending = ref<string[]>([])
-  const processed = new Set<string>()
-
-  const handle = async (id: string) => {
-    if (!id || processed.has(id)) return
-    processed.add(id)
-    try {
-      await handler(id)
-    } finally {
-      processed.delete(id)
-    }
-  }
-
-  const enqueueOrHandle = (id: string) => {
-    if (!id) return
-    if (isAppReady.value) {
-      handle(id)
-    } else if (!pending.value.includes(id)) {
-      pending.value.push(id)
-    }
-  }
-
-  const flush = async (parallel = true) => {
-    if (!pending.value.length) return
-    const ids = pending.value.splice(0)
-    console.log(`[${label}] flush:`, ids)
-    if (parallel) await Promise.all(ids.map(handle))
-    else for (const id of ids) await handle(id)
-  }
-
-  return { pending, enqueueOrHandle, flush }
-}
+// disabled: cloud/sharing - DeepLinkQueue removed
 
 // disabled: cloud/sharing - songShareQueue and playlistShareQueue removed
 // disabled: cloud/sharing - watch(isAppReady) removed
