@@ -226,7 +226,7 @@ function checkGuide() {...}
             <img src="../../assets/logo.png" width="100%" />
           </div>
           <p class="app-title">
-            <span style="font-weight: 800">Pop music</span>
+            <span style="font-weight: 800">Ikun music</span>
           </p>
         </div>
 
