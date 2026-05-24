@@ -1,5 +1,5 @@
-appId: com.cerumusic.app
-productName: 澜音
+appId: com.ikunmusic.app
+productName: Ikun music
 directories:
   buildResources: build
 asar: true
@@ -22,7 +22,7 @@ asarUnpack:
   - node_modules/file-uri-to-path/**
   - '**/*.node'
 win:
-  executableName: ceru-music
+  executableName: ikun-music
   icon: 'resources/icons/icon.ico'
   target:
     - target: nsis
@@ -35,13 +35,13 @@ win:
         - ia32
   fileAssociations:
     - ext: cmpl
-      name: 澜音播放器（歌单/播放列表）文件
-      description: 澜音播放器加密压缩后的（播放列表/歌单）文件
+      name: Ikun music 播放器（歌单/播放列表）文件
+      description: Ikun music 播放器加密压缩后的（播放列表/歌单）文件
       icon: resources/cmpl.ico
   protocols:
-    - name: Ceru Music Protocol
+    - name: Ikun music Protocol
       schemes:
-        - cerumusic
+        - ikunmusic
 nsis:
   include: build/installer.nsh
   license: EULA.txt
