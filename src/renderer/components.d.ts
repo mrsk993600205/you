@@ -12,6 +12,7 @@ declare module 'vue' {
     AudioOutputSettings: typeof import('./src/components/Settings/AudioOutputSettings.vue')['default']
     AudioVisualizer: typeof import('./src/components/Play/AudioVisualizer.vue')['default']
     BaseDialog: typeof import('./src/components/BaseDialog.vue')['default']
+    CommentsOverlay: typeof import('./src/components/Play/CommentsOverlay.vue')['default']
     ContextMenu: typeof import('./src/components/ContextMenu/ContextMenu.vue')['default']
     CrossfadeHint: typeof import('./src/components/Play/CrossfadeHint.vue')['default']
     Demo: typeof import('./src/components/ContextMenu/demo.vue')['default']

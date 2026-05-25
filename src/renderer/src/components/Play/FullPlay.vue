@@ -25,7 +25,7 @@ import { MessagePlugin } from 'tdesign-vue-next'
 import { usePlaySettingStore } from '@renderer/store'
 import PlaySettings from './PlaySettings.vue'
 import LyricAdapter from './Lyric/LyricAdapter.vue'
-// import CommentsOverlay from './CommentsOverlay.vue' // disabled
+import CommentsOverlay from './CommentsOverlay.vue'
 import LyricCopyOverlay from './LyricCopyOverlay.vue'
 // disabled
 // // import ListenTogetherOverlay from './ListenTogetherOverlay.vue'
@@ -1029,7 +1029,11 @@ onUnmounted(() => {
         </div>
       </Transition>
     </div>
-    <!-- <CommentsOverlay /> disabled -->
+    <CommentsOverlay
+      :show="showComments"
+      :main-color="lightMainColor"
+      @close="emit('update:showComments', false)"
+    />
     <!-- 歌词复制浮层 —— 右键歌词区域 / 更多菜单触发,样式与评论/一起听保持一致 -->
     <LyricCopyOverlay
       :show="lyricExtrasStore.copyOverlayVisible"
