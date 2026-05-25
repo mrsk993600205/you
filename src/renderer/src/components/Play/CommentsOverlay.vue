@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { ref, watch, computed, toRaw } from 'vue'
+import { ref, watch, computed } from 'vue'
 import { storeToRefs } from 'pinia'
 import { useGlobalPlayStatusStore } from '@renderer/store/GlobalPlayStatus'
-import type { Comment } from '@renderer/store/GlobalPlayStatus'
 import { CloseIcon, ChatBubbleIcon } from 'tdesign-icons-vue-next'
 
 const props = withDefaults(
@@ -26,12 +25,6 @@ const comments = computed(() =>
   activeTab.value === 'hot'
     ? player.value.comments.hotList
     : player.value.comments.latestList
-)
-
-const total = computed(() =>
-  activeTab.value === 'hot'
-    ? player.value.comments.hotTotal
-    : player.value.comments.latestTotal
 )
 
 const isLoading = computed(() =>
